@@ -22,10 +22,10 @@ export default function PrivacyPage() {
             <p>Your email is used solely to notify you of early access to Altitude I. We will not add you to any other list, or contact you for any other purpose, without your explicit consent.</p>
 
             <h2>Your rights</h2>
-            <p>You may request deletion of your data at any time by emailing hello@ancyr.in. We will process your request within 7 business days.</p>
+            <p>You may request deletion of your data at any time by emailing hello@ancyr.com. We will process your request within 7 business days.</p>
 
             <h2>Contact</h2>
-            <p>For privacy-related questions, write to: privacy@ancyr.in</p>
+            <p>For privacy-related questions, write to: privacy@ancyr.com</p>
           </div>
         </FadeIn>
       </div>

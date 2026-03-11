@@ -34,7 +34,7 @@ export default function StockistsPage() {
                 <p className="font-sans text-sm text-stone-500 leading-relaxed mb-8">
                   To register your interest, write to us or join the waitlist. We will reach out with dates as they are confirmed.
                 </p>
-                <Button href="mailto:appointments@ancyr.in" variant="outline" external>
+                <Button href="mailto:appointments@ancyr.com" variant="outline" external>
                   Request Appointment
                 </Button>
               </div>
@@ -49,7 +49,7 @@ export default function StockistsPage() {
                 <p className="font-sans text-sm text-stone-500 leading-relaxed mb-8">
                   Retail and stockist placement is planned for 2027 onwards, in curated luxury retail environments in India. If you represent such a space, we would be glad to hear from you.
                 </p>
-                <Button href="mailto:hello@ancyr.in?subject=Stockist Enquiry" variant="outline" external>
+                <Button href="mailto:hello@ancyr.com?subject=Stockist Enquiry" variant="outline" external>
                   Stockist Enquiries
                 </Button>
               </div>

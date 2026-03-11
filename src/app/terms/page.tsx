@@ -25,7 +25,7 @@ export default function TermsPage() {
             <p>The ANCYR name, logo, and all brand assets are protected intellectual property. Reproduction without written permission is not permitted.</p>
 
             <h2>Contact</h2>
-            <p>For legal enquiries: legal@ancyr.in</p>
+            <p>For legal enquiries: legal@ancyr.com</p>
           </div>
         </FadeIn>
       </div>

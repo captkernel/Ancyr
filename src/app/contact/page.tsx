@@ -22,9 +22,9 @@ export default function ContactPage() {
               </p>
               <div className="space-y-8">
                 {[
-                  { label: 'General', email: 'hello@ancyr.in', note: 'Questions about the brand, collection, and materials' },
-                  { label: 'Press', email: 'press@ancyr.in', note: 'Editorial, interviews, and image requests' },
-                  { label: 'Private Appointments', email: 'appointments@ancyr.in', note: 'In-person viewing in select cities' },
+                  { label: 'General', email: 'hello@ancyr.com', note: 'Questions about the brand, collection, and materials' },
+                  { label: 'Press', email: 'press@ancyr.com', note: 'Editorial, interviews, and image requests' },
+                  { label: 'Private Appointments', email: 'appointments@ancyr.com', note: 'In-person viewing in select cities' },
                 ].map(item => (
                   <div key={item.label} className="border-t border-stone-200 pt-6">
                     <p className="font-sans text-[0.625rem] font-medium tracking-[0.2em] uppercase text-stone-400 mb-1">{item.label}</p>
@@ -37,7 +37,7 @@ export default function ContactPage() {
             <FadeIn delay={100}>
               <div className="border border-stone-200 p-8">
                 <p className="label mb-6">Send a Message</p>
-                <form className="flex flex-col gap-6" action="mailto:hello@ancyr.in" method="get" encType="text/plain">
+                <form className="flex flex-col gap-6" action="mailto:hello@ancyr.com" method="get" encType="text/plain">
                   <div>
                     <label htmlFor="contact-name" className="font-sans text-[0.625rem] font-medium tracking-[0.2em] uppercase text-stone-400 block mb-2">Your Name</label>
                     <input id="contact-name" type="text" name="name" autoComplete="name" className="input-luxury" placeholder="Name" />

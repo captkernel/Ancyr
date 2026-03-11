@@ -39,7 +39,9 @@ export function PlaceholderImage({
   priority = false,
 }: PlaceholderImageProps) {
   const [failed, setFailed] = useState(false);
-  const showImage = src && !failed;
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  const prefixedSrc = src ? basePath + src : undefined;
+  const showImage = prefixedSrc && !failed;
 
   return (
     <div
@@ -55,7 +57,7 @@ export function PlaceholderImage({
       {showImage ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img
-          src={src}
+          src={prefixedSrc}
           alt={label}
           loading={priority ? 'eager' : 'lazy'}
           decoding={priority ? 'sync' : 'async'}
