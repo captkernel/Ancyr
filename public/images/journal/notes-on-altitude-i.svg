@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 675" width="1000" height="675">
+  <defs>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.65" numOctaves="3" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+      <feBlend in="SourceGraphic" mode="multiply" result="blend"/>
+      <feComposite in="blend" in2="SourceGraphic" operator="in"/>
+    </filter>
+  </defs>
+  <rect x="0" y="0" width="200" height="675" fill="#F5F0E8" />
+<rect x="200" y="0" width="200" height="675" fill="#B8B4AC" />
+<line x1="200" y1="0" x2="200" y2="675" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
+<rect x="400" y="0" width="200" height="675" fill="#2A2218" />
+<line x1="400" y1="0" x2="400" y2="675" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
+<rect x="600" y="0" width="200" height="675" fill="#2C3828" />
+<line x1="600" y1="0" x2="600" y2="675" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
+<rect x="800" y="0" width="200" height="675" fill="#C8A87A" />
+<line x1="800" y1="0" x2="800" y2="675" stroke="rgba(0,0,0,0.06)" stroke-width="1"/>
+
+  <!-- grain overlay -->
+  <rect width="1000" height="675" fill="rgba(255,255,255,0.02)" filter="url(#grain)" opacity="0.3"/>
+  <!-- title area -->
+  <rect x="0" y="545" width="1000" height="130" fill="rgba(255,255,255,0.08)"/>
+  <text x="500" y="583" font-family="Georgia, serif" font-size="22" fill="#FAF8F4" text-anchor="middle" letter-spacing="4" opacity="0.9">ALTITUDE I</text>
+  <text x="500" y="609" font-family="Georgia, serif" font-size="13" fill="#FAF8F4" text-anchor="middle" letter-spacing="2" opacity="0.6" font-style="italic">Light Edition — Five Colours</text>
+  <text x="100" y="627" font-family="Georgia, serif" font-size="13" fill="#1C1917" text-anchor="middle" opacity="0.7">The 1965</text>
+<text x="300" y="627" font-family="Georgia, serif" font-size="13" fill="#1C1917" text-anchor="middle" opacity="0.7">Beas</text>
+<text x="500" y="627" font-family="Georgia, serif" font-size="13" fill="#FAF8F4" text-anchor="middle" opacity="0.7">Mohal</text>
+<text x="700" y="627" font-family="Georgia, serif" font-size="13" fill="#FAF8F4" text-anchor="middle" opacity="0.7">Deodar</text>
+<text x="900" y="627" font-family="Georgia, serif" font-size="13" fill="#1C1917" text-anchor="middle" opacity="0.7">Solang</text>
+
+</svg>

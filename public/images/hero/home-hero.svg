@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="1200" height="675">
+<defs>
+  <linearGradient id="sky" x1="0%" y1="0%" x2="0%" y2="100%">
+    <stop offset="0%" stop-color="#1C1814"/>
+    <stop offset="35%" stop-color="#2E2820"/>
+    <stop offset="65%" stop-color="#8A6A50"/>
+    <stop offset="80%" stop-color="#C49870"/>
+    <stop offset="100%" stop-color="#D8B888"/>
+  </linearGradient>
+  <linearGradient id="m5" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#3A3430"/><stop offset="100%" stop-color="#1C1814"/></linearGradient>
+  <linearGradient id="m4" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5A5248" stop-opacity="0.85"/><stop offset="100%" stop-color="#3A3430" stop-opacity="0.9"/></linearGradient>
+  <linearGradient id="m3" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#7A7068" stop-opacity="0.7"/><stop offset="100%" stop-color="#5A5248" stop-opacity="0.8"/></linearGradient>
+  <linearGradient id="m2" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#A0958A" stop-opacity="0.55"/><stop offset="100%" stop-color="#7A7068" stop-opacity="0.65"/></linearGradient>
+  <linearGradient id="m1" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#C8BEB5" stop-opacity="0.38"/><stop offset="100%" stop-color="#A0958A" stop-opacity="0.48"/></linearGradient>
+  <linearGradient id="mist" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="rgba(210,195,178,0)" /><stop offset="60%" stop-color="rgba(210,195,178,0.18)"/><stop offset="100%" stop-color="rgba(210,195,178,0.08)"/></linearGradient>
+  <linearGradient id="fab" x1="20%" y1="0%" x2="80%" y2="100%"><stop offset="0%" stop-color="#FEFCF8"/><stop offset="30%" stop-color="#F5F0E8"/><stop offset="70%" stop-color="#EAE3D5"/><stop offset="100%" stop-color="#C8BEB0"/></linearGradient>
+  <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+  <filter id="blur3"><feGaussianBlur stdDeviation="3"/></filter>
+  <filter id="grain" x="-5%" y="-5%" width="110%" height="110%"><feTurbulence type="fractalNoise" baseFrequency="0.72" numOctaves="4" stitchTiles="stitch" result="n"/><feColorMatrix in="n" type="saturate" values="0" result="g"/><feBlend in="SourceGraphic" in2="g" mode="soft-light" result="b"/><feComposite in="b" in2="SourceGraphic" operator="in"/></filter> <radialGradient id="vign" cx="50%" cy="50%" r="70%"><stop offset="0%" stop-color="rgba(0,0,0,0)"/><stop offset="68%" stop-color="rgba(0,0,0,0)"/><stop offset="100%" stop-color="rgba(0,0,0,0.55)"/></radialGradient>
+</defs>
+<rect width="1200" height="675" fill="url(#sky)"/>
+<!-- Mountain layer 5 - furthest, darkest -->
+<path d="M0,675 L0,400 C80,370 160,320 240,340 C320,360 360,310 440,290 C520,270 560,310 640,330 C720,350 800,300 880,280 C960,260 1000,305 1080,290 C1120,282 1160,310 1200,320 L1200,675 Z" fill="url(#m5)"/>
+<!-- Mountain layer 4 -->
+<path d="M0,675 L0,440 C100,415 180,380 260,400 C340,420 380,370 460,350 C540,330 580,375 660,390 C740,405 820,355 900,370 C980,385 1040,420 1120,400 L1200,420 L1200,675 Z" fill="url(#m4)"/>
+<!-- Mist between layers -->
+<rect x="0" y="380" width="1200" height="80" fill="url(#mist)" filter="url(#blur8)"/>
+<!-- Mountain layer 3 -->
+<path d="M0,675 L0,475 C120,450 200,420 300,445 C400,470 440,425 520,410 C600,395 640,440 720,455 C800,470 880,430 960,445 C1040,460 1100,490 1200,470 L1200,675 Z" fill="url(#m3)"/>
+<!-- Mountain layer 2 -->
+<path d="M0,675 L0,510 C140,488 220,465 320,488 C420,511 480,472 560,458 C640,444 700,480 780,494 C860,508 940,478 1040,490 C1100,496 1160,518 1200,508 L1200,675 Z" fill="url(#m2)"/>
+<!-- Mountain layer 1 - closest -->
+<path d="M0,675 L0,548 C160,525 260,510 360,532 C460,554 520,520 600,505 C680,490 760,522 840,535 C920,548 1000,525 1100,535 C1150,540 1180,558 1200,548 L1200,675 Z" fill="url(#m1)"/>
+<!-- Mist near horizon -->
+<rect x="0" y="490" width="1200" height="70" fill="rgba(215,202,185,0.14)" filter="url(#blur8)"/>
+<!-- Focal fabric drape in foreground right -->
+<path d="M 760,675 C 758,560 750,460 748,380 C 746,300 752,240 758,180 C 764,120 768,68 765,0 L 870,0 C 867,68 872,120 878,180 C 884,240 888,300 886,380 C 884,460 878,560 876,675 Z" fill="url(#fab)" opacity="0.92"/>
+<path d="M 760,675 C 758,560 750,460 748,380 C 746,300 752,240 758,180 C 764,120 768,68 765,0 L 870,0 C 867,68 872,120 878,180 C 884,240 888,300 886,380 C 884,460 878,560 876,675 Z" fill="rgba(0,0,0,0.08)" filter="url(#blur3)"/>
+<rect width="100%" height="100%" fill="rgba(90,80,65,0.04)" filter="url(#grain)"/><rect width="100%" height="100%" fill="url(#vign)"/>
+</svg>
