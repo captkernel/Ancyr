@@ -72,7 +72,7 @@ export default function HomePage() {
               </h2>
               <p className="font-sans text-base text-stone-600 leading-relaxed mb-4">
                 ANCYR began as a family craft. A generation of Himalayan Angora — combed,
-                spun, and woven by hand in Uttarakhand. What was knowledge became craft.
+                spun, and woven by hand in the Kullu valley. What was knowledge became craft.
                 What was craft became a house.
               </p>
               <p className="font-sans text-base text-stone-600 leading-relaxed mb-8">
@@ -86,7 +86,7 @@ export default function HomePage() {
               <div className="grid grid-cols-2 gap-3">
                 <PlaceholderImage label="Artisan hands combing raw Angora fibre — macro, warm light" src="/images/craft/combing.svg" aspectRatio="3/4" tone="medium" />
                 <div className="flex flex-col gap-3">
-                  <PlaceholderImage label="Himalayan landscape — Uttarakhand, mist" src="/images/brand/himalayan-landscape.svg" aspectRatio="4/3" tone="light" />
+                  <PlaceholderImage label="Himalayan landscape — Kullu valley, mist" src="/images/brand/himalayan-landscape.svg" aspectRatio="4/3" tone="light" />
                   <PlaceholderImage label="Finished shawl edge detail — texture, weave" src="/images/craft/finishing.svg" aspectRatio="4/3" tone="dark" />
                 </div>
               </div>
